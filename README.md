@@ -15,6 +15,7 @@ At present this generates 4 output formats:
 1. a gem containing a Rails engine
 2. a tarball containing Play Framework templates
 3. a folder containing Mustache templates
+3. a tarball containing Mustache Inheritance templates
 4. a tarball
 
 ### Gem version
@@ -36,6 +37,12 @@ To generate the tarball of Play Framework templates run `bundle exec rake build:
 ### Mustache version
 
 To generate the folder of Mustache templates run `bundle exec rake build:mustache`. This will produce a folder in the `pkg` directory.
+
+### Mustache Inheritance version
+
+There is a [proposal for Mustache to support template inheritance](https://github.com/mustache/spec/issues/38) this is supported in both the `mustache.java` and the `hogan.js` implementations of Mustache.
+
+To generate the tarball of the Mustache Inheritance templates run the `build:mustache_inheritance` rake task. This will produce a tarball in the `pkg` directory.
 
 ### Tarball version
 
